@@ -344,13 +344,14 @@
                 <p class="footer-сall">Підпишіться на розсилку</p>
                 <form action="">
                     <label for="footer-mail"></label>
-                    <input type="email" class="footer-mail" name="email" id="footer-mail" placeholder="E-mail">
+                    <div class="submit">
+                        <input type="email" class="footer-mail" name="email" id="footer-mail" placeholder="E-mail">
+                    <button class="signup" type="submit">Підписатися <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/icon.svg#icon-icon-send"></use>
+                        </svg></button>
+                    </div>
                 </form>
             </div>
-            <button class="signup" type="button">Підписатися <svg class="icon-send" width="24px" height="24px">
-                <use href="./images/icon.svg#icon-icon-send"></use>
-            </svg></button>
-            
         </div>
     </footer>
    <!-- Модальне вікно  -->
@@ -395,14 +396,15 @@
                     <textarea name="feedback" id="feedback" placeholder="Введіть текст"></textarea>
                 </div>
                 <div class="accept">
-                    <input type="checkbox" id="accept" name="accept" class="visually-hidden">
-                    <div class="checkbox">
-                        <svg width="11px" height="8px">
-                            <use href="./images/icon.svg#icon-mark"></use>
-                        </svg>
-                    </div>
-                    <label for="accept">Погоджуюся з розсилкою та приймаю
-                        <span><a href="https://goit.ua/" target="_blank" rel="nofollow noopener noreferrer">Умови договору</a></span>
+                    <label for="accept">
+                        <input type="checkbox" id="accept" name="accept" class="visually-hidden">
+                        <div class="checkbox">
+                            <svg width="11px" height="8px">
+                                <use href="./images/icon.svg#icon-mark"></use>
+                            </svg>
+                        </div>
+                        Погоджуюся з розсилкою та приймаю
+                        <span><a href="https://goit.ua/" target="_blank" rel="nofollow noopener noreferrer"> Умови договору</a></span>
                     </label>
                 </div>
                 <button class="modal-btn" type="submit">Відправити</button>

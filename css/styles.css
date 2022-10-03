@@ -540,6 +540,11 @@ body {
     padding-left: 16px;
     outline: none;
 }
+.footer-mail:focus{
+    border-color: var(--white-text);
+    color: var(--white-text);
+    }
+
 
 
 .mailing-list{
@@ -547,13 +552,14 @@ body {
 }
 
 .signup{
-    width: 200px;
-    height: 50px;
+    
     background-color: var(--accent);
     padding: 10px 28px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    border-color: transparent;
+
 
     font-weight: 700;
     font-size: 16px;
@@ -565,11 +571,15 @@ body {
     color: var(--white-text);
 
     margin-left: 10px;
-    margin: auto;
+    
     cursor: pointer;
 
     transition: background-color var(--time-function);
 }
+.submit{
+    display: flex;
+}
+
 .signup:hover,
 .signup:focus {
     background-color: var(--accent-hover);
@@ -817,6 +827,10 @@ textarea:focus{
     line-height: 1.714;
     margin-bottom: 30px;
 }
+.accept label{
+    display: flex;
+    align-items: center;
+}
 .accept input:checked  + .checkbox{
     background-color: var(--accent);
     border: 2px solid var(--accent);
@@ -853,8 +867,6 @@ textarea:focus{
 
 .modal-btn {
     padding: 10px 52px;
-    width: 200px;
-    height: 50px;
     background-color: var(--accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
